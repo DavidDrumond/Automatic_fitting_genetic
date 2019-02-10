@@ -1,0 +1,30 @@
+                  Parameters for GAMV
+                  *******************
+
+START OF PARAMETERS:
+Ferro 3d.dat               -file with data
+1   2   3                         -   columns for X, Y, Z coordinates
+1   4                            -   number of variables,col numbers
+-1.0e21     1.0e21                -   trimming limits
+gamv.out                          -file for variogram output
+15                                 -number of lags
+20                             -lag separation distance
+10                               -lag tolerance
+1                               -number of directions
+90  45 500  90  45  500 -azm,atol,bandh,dip,dtol,bandv
+0                                 -standardize sills? (0=no, 1=yes)
+1                                 -number of variograms
+1   1   1                         -tail var., head var., variogram type
+
+
+
+type 1 = traditional semivariogram
+     2 = traditional cross semivariogram
+     3 = covariance
+     4 = correlogram
+     5 = general relative semivariogram
+     6 = pairwise relative semivariogram
+     7 = semivariogram of logarithms
+     8 = semimadogram
+     9 = indicator semivariogram - continuous
+     10= indicator semivariogram - categorical
